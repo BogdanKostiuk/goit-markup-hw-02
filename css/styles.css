@@ -1,18 +1,32 @@
 
+:root{
 
-body {
+  /* Цвет заднего фона */
+  --primary-bg--mode: #2F303A;
 
-font-family: "Roboto", sans-serif;
-font-weight: 400;
-font-size: 16px;
-line-height: 1.88;
-letter-spacing: 0.03em;
+  /* Основные шрифты */
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
 
-color: #757575;
-;
-
+  /*Основные цвета*/
+  --title-cl: #212121;
+  --target-cl: #2196F3;
+  --web-cl: #2196F3;
+  --studio-footer-cl: #ffffff;
+  --link-header-cl: #757575;
 }
 
+/* Common styles */
+body {
+font-family: var(--main-font);
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: #757575;
+}
+
+/* скрываем заголовок */
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -25,7 +39,140 @@ color: #757575;
   clip-path: inset(50%);
   margin: -1px;
 }
-a {
+
+.list { list-style: none;}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+.btn{
   cursor: pointer;
-  text-decoration: none; 
+}
+
+.hero, .footer {
+  background-color: var(--primary-bg--mode);
+}
+
+/* header*/
+.navigation-link{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-cl);  
+}
+.link-mail, .link-tel{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--link-header-cl);
+}
+
+.web-primary, .web-secondary{
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--web-cl);
+}
+
+.studio-primary{
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.studio-secondary{
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--studio-footer-cl);
+}
+
+.studio-secondary{
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--studio-footer-cl);
+}
+
+/* секция герой*/
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  color: #FFFFFF;
+}
+
+/* секция особенности*/
+.dignity-headline {
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--title-cl);
+}
+
+/*секция занятия+команда*/
+.services-title, .team-title{
+  font-size: 36px;
+  line-height: 1.17;
+  color: var(--title-cl);
+}
+
+.team-headline {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--title-cl);
+}
+
+.team-position {
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+/*секция портфолио*/
+.projects-headline{
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-cl);
+}
+
+.projects-view{
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+/*footer*/
+.footer-location{
+   color: var(--studio-footer-cl);
+}
+
+.footer-mail, .footer-tel{
+   color: rgba(255, 255, 255, 0.6);
+}
+
+/*добовляем ховер и фокус на сслыки и кнопки*/
+.target:hover,
+.target:focus {
+  color: var(--target-cl);
+}
+
+ .hero-btn:hover,
+ .hero-btn:focus {
+  background-color: var(--target-cl);
+  color: #FFFFFF;
+ /* border: 1px solid var(--accent-cl);*/
+}
+
+ .filtre-btn:hover,
+ .filtre-btn:focus {
+  background-color: var(--target-cl);
+  color: #FFFFFF;
+ /* border: 1px solid var(--accent-cl);*/
 }
