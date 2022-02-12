@@ -13,7 +13,13 @@
   --target-cl: #2196F3;
   --web-cl: #2196F3;
   --studio-footer-cl: #ffffff;
-  --link-header-cl: #757575;
+  --link-contact-cl: #757575;
+  --hero-cl: #ffffff;
+  --foter-mail-cl: #FFFFFF99;
+  --txt-btn-cl:#ffffff;
+  --txt-link-cl: #000000;
+
+
 }
 
 /* Common styles */
@@ -44,7 +50,7 @@ color: #757575;
 
 .link {
   text-decoration: none;
-  color: black;
+  color: var(--txt-link-cl);
 }
 .btn{
   cursor: pointer;
@@ -67,7 +73,7 @@ color: #757575;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--link-header-cl);
+  color: var(--link-contact-cl);
 }
 
 .web-primary, .web-secondary{
@@ -92,21 +98,12 @@ color: #757575;
   color: var(--studio-footer-cl);
 }
 
-.studio-secondary{
-  font-family: var(--secondary-font);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--studio-footer-cl);
-}
-
 /* секция герой*/
 .hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  color: #FFFFFF;
+  color: var(--hero-cl);
 }
 
 /* секция особенности*/
@@ -154,7 +151,7 @@ color: #757575;
 }
 
 .footer-mail, .footer-tel{
-   color: rgba(255, 255, 255, 0.6);
+   color: var(--foter-mail-cl);
 }
 
 /*добовляем ховер и фокус на сслыки и кнопки*/
@@ -166,13 +163,11 @@ color: #757575;
  .hero-btn:hover,
  .hero-btn:focus {
   background-color: var(--target-cl);
-  color: #FFFFFF;
- /* border: 1px solid var(--accent-cl);*/
+  color: var(--txt-btn-cl);
 }
 
  .filtre-btn:hover,
  .filtre-btn:focus {
   background-color: var(--target-cl);
-  color: #FFFFFF;
- /* border: 1px solid var(--accent-cl);*/
+  color: var(--txt-btn-cl);
 }
