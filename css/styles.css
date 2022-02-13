@@ -3,6 +3,9 @@
 
   /* Цвет заднего фона */
   --primary-bg--mode: #2F303A;
+  --secondary-bg--mode: #ffffff;
+  
+
 
   /* Основные шрифты */
   --main-font: "Roboto", sans-serif;
@@ -18,6 +21,10 @@
   --foter-mail-cl: #FFFFFF99;
   --txt-btn-cl:#ffffff;
   --txt-link-cl: #000000;
+  --current-cl: #2196F3;
+  --bg-hero--btn-cl: #188CE8;
+  --btn-filter--bg-mode:#F5F4FA;
+
 
 
 }
@@ -30,6 +37,8 @@ font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color: #757575;
+background: var(--secondary-bg--mode);
+
 }
 
 /* скрываем заголовок */
@@ -60,13 +69,17 @@ color: #757575;
   background-color: var(--primary-bg--mode);
 }
 
+.navigation-link.current{
+  color: var(--current-cl);
+}
+
 /* header*/
 .navigation-link{
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--title-cl);  
+  color: var(--title-cl); 
 }
 .link-mail, .link-tel{
   font-weight: 500;
@@ -104,19 +117,39 @@ color: #757575;
   font-size: 44px;
   line-height: 1.36;
   color: var(--hero-cl);
+  text-align: center;
+  text-transform: uppercase;
 }
+.hero-btn{
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  background-color: var(--target-cl);
+  color: var(--hero-cl);
+  border-style: none;
+  box-shadow: 0px 4px 4px #d9d9d9;
+  border-radius: 4px;
+  }
 
 /* секция особенности*/
 .dignity-headline {
   font-size: 14px;
   line-height: 1.14;
   color: var(--title-cl);
+  text-transform: uppercase;
 }
 
 /*секция занятия+команда*/
+.team{
+background-color: var(--team-bg--mode);
+}
+
+
 .services-title, .team-title{
   font-size: 36px;
   line-height: 1.17;
+  text-align: center;
   color: var(--title-cl);
 }
 
@@ -133,6 +166,20 @@ color: #757575;
 }
 
 /*секция портфолио*/
+
+.filtre-btn{
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  border-style: none;
+  border-radius: 4px;
+  background-color: var(--btn-filter--bg-mode);
+}
+
 .projects-headline{
   font-size: 18px;
   line-height: 2;
@@ -143,14 +190,23 @@ color: #757575;
 .projects-view{
   font-size: 16px;
   line-height: 1.88;
+  color: var(--link-contact-cl);
 }
 
 /*footer*/
+.footer-contact{
+  font-style: normal;
+}
+
+.fotter-list{
+  font-style: normal;
+}
 .footer-location{
    color: var(--studio-footer-cl);
 }
 
 .footer-mail, .footer-tel{
+  
    color: var(--foter-mail-cl);
 }
 
@@ -162,8 +218,7 @@ color: #757575;
 
  .hero-btn:hover,
  .hero-btn:focus {
-  background-color: var(--target-cl);
-  color: var(--txt-btn-cl);
+  background-color: var(--bg-hero--btn-cl);
 }
 
  .filtre-btn:hover,
