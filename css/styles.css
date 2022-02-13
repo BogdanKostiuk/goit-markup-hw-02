@@ -3,7 +3,7 @@
 
   /* Цвет заднего фона */
   --primary-bg--mode: #2F303A;
-  --secondary-bg--mode: #ffffff;
+  --secondary-bg--mode: #F5F4FA;
   
 
 
@@ -37,8 +37,6 @@ font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color: #757575;
-background: var(--secondary-bg--mode);
-
 }
 
 /* скрываем заголовок */
@@ -142,7 +140,7 @@ background: var(--secondary-bg--mode);
 
 /*секция занятия+команда*/
 .team{
-background-color: var(--team-bg--mode);
+background-color: var(--secondary-bg--mode);
 }
 
 
